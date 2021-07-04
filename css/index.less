@@ -1,0 +1,21 @@
+.center() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@w: 400px;
+@h: @w;
+@c: deeppink;
+.father {
+    .center();
+    width: @w;
+    height: @h;
+    background-color: @c;
+    .son {
+        .center();
+        width: (@w / 2);
+        height: (@h / 2);
+        background-color: deepskyblue;
+    }
+}
